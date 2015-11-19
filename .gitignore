@@ -2,6 +2,11 @@
 __pycache__/
 *.py[cod]
 
+# eclipse project
+.project
+.pydevproject
+.settings/*
+
 # C extensions
 *.so
 
