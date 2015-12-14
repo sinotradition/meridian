@@ -24,6 +24,33 @@ yinchannels=('largeintestine','stomach','smallintestine','bladder','sanjiao','ga
 '''奇经八脉:任脉,督脉,冲脉,带脉,阴维(腧)脉,阳维(腧)脉,阴跷脉,阳跷脉'''
 extraordinarychannels=('ren', 'du', 'chong', 'dai', 'yinwei', 'yangwei', 'yinqiao', 'yangqiao')
 
+'''手太阴肺经穴位: 中府，云门，天府，侠白，尺泽，孔最，列缺，经渠，太渊，鱼际，少商'''
+lungaps=('zhongfu', 'yunmen', 'tianfu', ' xiabai', ' chize', 'kongzui', 'lieque', 'jingqu', 'taiyuan', 'yuji', 'shaoshang')
+'''手阳明大肠经腧穴：商阳、二间、三间、合谷、阳溪、偏历、温溜、下廉、上廉、手三里、曲池、肘髎、手五里、臂臑、肩髃、巨骨、天鼎、扶突、禾髎、迎香'''
+largeintestineaps=('shangyang', 'erjian', 'sanjian', 'hegu', 'yangxi', 'pianli', 'wenliu', 'xialian', 'shanglian', 'shousanli', 'quchi', 'zhouliao', 'shouwuli', 'binao', 'jianyu', 'jugu', 'tianding', 'futu', 'heliao', 'yingxiang')
+'''足阳明胃经腧穴：'''
+stomachaps=('')
+'''足太阴脾经腧穴：隐白、大都、太白、公孙、商丘、三阴交、漏谷、地机、阴陵泉、血海、箕门、冲门、府舍、腹结、大横、腹哀、食窦、天溪、胸乡、周荣、大包'''
+spleenaps=('yinbai', 'dadu', 'taibai', 'gongsun', 'shangqiu', 'sanyinjiao', 'lougu', 'diji', 'yinlingquan', 'xuehai', 'jimen', 'chongmen', 'fushe', 'fujie', 'daheng', 'fuai', 'shidou', 'tianxi', 'xiongxiang', 'zhourong', 'dabao')
+'''手少阴心经腧穴：'''
+heartaps=('')
+'''手太阳小肠经腧穴：'''
+smallintestineaps=('')
+'''足太阳膀胱经腧穴：'''
+bladderaps=('')
+'''足少阴肾经腧穴：'''
+kidneyaps=('')
+'''手厥阴心包经穴位：天池、天泉、曲泽、郄门、间使、内关、大陵、劳宫、中冲'''
+percardiumaps=('tianchi', 'tianquan', 'quze', 'qiemen', 'jianshi', 'neiguan', 'daling', 'laogong', 'zhongchong')
+'''手少阳三焦经腧穴：'''
+sanjiaoaps=('')
+'''足少阳胆经腧穴：'''
+gallbladderaps=('')
+'''足厥阴肝经腧穴：'''
+liveraps=('')
+
+
+
 class acupoint(object):
     def __init__(self,pointname,pointtype,pointchannel):
         self.name=pointname
@@ -35,7 +62,9 @@ class acuchannel(object):
         self.name=channelname
         self.member=acupoints
 
-acuchannels=("a")
+class meridian(object):
+    def __init__(self):
+        self.taiying=acuchannel('taiyin', ('acupoints',))
 
 if __name__ == "__main__":
     pass
